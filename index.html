@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<link href="home.css" rel="stylesheet" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Visit Timisoara</title>
+		<meta name="author" content="user" />
+		<script type="text/javascript">
+imagini = new Array("img/T1.jpg","img/T2.jpg","img/T4.jpg","img/T5.jpg");
+nr=0;
+lung=imagini.length;
+function goback()
+{
+    if ((document.images) && (nr > 0))
+	{
+		nr--;
+		document.getElementById('imgs').src = imagini[nr];
+		
+    }
+}
+function gonext()
+{
+    if ((document.images) && (nr < (lung-1)))
+	{
+		nr++;   
+		document.getElementById('imgs').src = imagini[nr];
+		
+		
+    }
+}
+
+creste = true;
+setInterval(function ()
+{
+	if(creste)
+	{
+		gonext();
+		if(nr == lung - 1)
+			creste = false;
+	}
+	else 
+	{
+		goback();
+		if(nr==0)
+			creste=true;
+	}
+},2000);
+
+
+
+</script>
+	</head>
+	<body>
+	<div id="ant">
+	<a href="home.html"><img class="logo" src="logo.png" /></a>
+	<iframe class="blank" src="https://www.meteoblue.com/en/weather/widget/daily/timi%c8%99oara_romania_665087?geoloc=fixed&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windgust=0&winddirection=0&uv=0&humidity=0&precipitation=0&precipitationprobability=0&spot=0&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 216px;height: 171px"></iframe></div>
+	</div>
+	<header>
+	<nav >
+		<ul>
+			<li>
+				<a href="">
+					<div>
+						Tourist attractions
+					</div>
+					</a><div>
+					<ul>
+						<li><a href="#">Best of Timisoara</a></li>
+						<li><a href="biserici.html">Historical churches</a></li>
+						<li><a href="muzee.html">Museums</a></li>
+						<li><a href="#">Parks and GreenPlaces</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">
+					<div>
+						What can you do?
+					</div>
+				</a><div>
+					<ul>
+						<li><a href="#">Theater and opera</a></li>
+						<li><a href="#">Art and culture</a></li>
+						<li><a href="shopping.html">Shopping</a></li>
+						<li><a href="#">Clubs and Bars</a></li>
+						<li><a href="#">Restaurants and Pubs</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="WhereCanYouStay.html">
+					<div>
+						Where can you stay?
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div>
+						  About Timisoara
+					</div>
+				</a><div>
+					<ul>
+						<li><a href="TownHistory.html">Town's history</a></li>
+						<li><a href="#">Local legents</a></li>
+						<li><a href="#">Timisoara in photos</a></li>
+						<li><a href="#">Presentation video</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		
+	</nav>
+	
+</header>
+<div class="slide">
+
+<img src="img/T1.jpg" id="imgs"  width="100%" height="430" alt="t1" ></a>
+
+</div>
+
+<div class="fundal" >
+<div id="container" >
+	<div class="box_cnt">
+
+<div class="box_top">
+  <div class="box_footer">
+		<h1 class="ce_poti_face">What can you do?</h1><br>
+			<div class="eveniment spacer">
+  				<h2 style="height:34px;">Street Food Festival in the park of roses </a></h2>
+					<br><br><p class="date"><span></span>Thursday, 10 - 13 May 2018</p>
+						<p class="date"><span>time: </span>12:00 PM</p> <br>
+									<a href="https://www.facebook.com/events/568446680184819/"><img alt="Streetfood" src="img/sff.jpg" width="148" height="224" class="img"></a></p>
+			</div>
+			<div class="eveniment spacer">
+  				<h2 style="height:34px;">Revolution Festival at <span>the museum of the Banat village</span></a></h2>
+					<br><br><br><p class="date"><span></span>Thursday, 31 May - 3 June 2018</p>
+						<p class="date"><span>time: </span>05:00 PM </p><p class="date"></p><p>
+							<a href="https://www.facebook.com/revolutionfestivaltimisoara/"><img alt="Revolution" src="img/rev.jpg" width="148" height="224" class="img"></a></p>
+			</div>
+			<div class="eveniment spacer">
+  				<h2 style="height:34px;">Student Fest - Abstract <span> </span></a></h2>
+					<br><p class="date"><span></span>Friday, 4-13 May</p>
+						<p class="date"><span>time: </span>12:00 PM</p><p class="date"></p><p> <br><br><br>
+							<a href="https://www.facebook.com/events/1925106554486808/"><img alt="Studentfest" src="img/stud.jpg" width="148" height="224" class="img"></a></p>
+			</div>
+			<div class="eveniment">
+  				<h2 style="height:34px;">The color run</h2>
+					<p class="date"><span></span>Saturday, 5 May 2018</p>
+						<p class="date"><span>time: </span>02:00-10:00 PM</p><p class="date"> </p><p> <br><br><br><br>
+							<a href="https://www.facebook.com/groups/1038825619538958/"><img alt="ColorRun" src="img/color.jpg" height=224" width="148" height="224" class="img"></a></p>
+			</div>
+			<div class="clear"></div>
+  </div>
+</div>
+</div><p>&nbsp;</p>
+
+
+<div class="box_top">
+  <div class="box_footer">
+		<h1 class="obiective">What can you visit?</h1><br>
+			<div class="eveniment spacer"><br>
+  				<h2 style="height:34px;">Union square</h2>
+  					<p><br><a href="https://www.google.ro/maps/place/Pia%C8%9Ba+Unirii,+Timi%C8%99oara/@45.7583935,21.2268513,17z/data=!3m1!4b1!4m5!3m4!1s0x47456781b7c76ba9:0xdf9cdca30597d91!8m2!3d45.7583935!4d21.22904"><img alt="Unirii" src="img/unirii.jpg" width="148" class="img"></a></p>
+			</div>
+			<div class="eveniment spacer"><br>
+ 				 <h2 style="height:34px;">National romanian opera</h2>
+  					<p><br><a href="https://www.google.ro/maps/place/Opera+Na%C8%9Bional%C4%83+Rom%C3%A2n%C4%83/@45.7540588,21.2236685,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d7f949f9417:0xdff8464b2216e182!8m2!3d45.7540588!4d21.2258572"><img alt="Opera" src="img/opera.png" width="148" height="150" class="img" href=""></a></p>
+			</div>
+			<div class="eveniment spacer"><br>
+  				<h2 style="height:34px;">The bastion</h2>
+  					<p><br><a href="https://www.google.ro/maps/place/Bastion/@45.75772,21.2309713,17z/data=!3m1!4b1!4m5!3m4!1s0x4745677f180cafef:0x7ef840611d3e2982!8m2!3d45.75772!4d21.23316"><img alt="Bastion" src="img/bastion.jpg" width="148" height="150" class="img"><a></p>
+			</div>
+			<div class="eveniment"><br>
+  				<h2 style="height:34px;">The park of roses</h2>
+  					<p><br><a href="https://www.google.ro/maps/place/Roses+Park/@45.7500944,21.2294939,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d81525cb4d5:0xd8179b2d28e5587b!8m2!3d45.7500944!4d21.2316826"><img alt="Rozelor" src="img/rozelor.jpg" width="148" height="150" class="img"><a></p>
+			</div>
+<div class="clear"></div>
+</div>
+</div>
+<p>&nbsp;</p>
+
+<div class="box_cnt">
+	<div class="box_top">
+		<div class="box_footer">
+			<h1 class="obiective">Restaurants</h1><br>
+			<div class="org">
+				<div class="cazare spacer">
+  					<h2>Jack's Bistro</h2>
+ 						 <a title="Jacks"><img alt="Jacks" src="img/jacks.png";width=150&amp;height=150" width="150" class="img"></a>
+ 							Jack's bistro is one of the most awesome restaurants in Timisoara, 
+ 							the food is affordable for anyone due to the good prices and
+ 							it is delicious. The staff is so welcoming that you would feel 
+ 							as if you never left your hometown. Jack's bistro is a must go restaurant
+ 							graded with five stars on tripadvisor.
+  						<div class="clear"></div></div>
+  
+  					<div class="eveniment_spacer" align="top" border>
+ 					 <h2>Musiu</h2>
+  						<a title="Musiu"><img alt="Musiu" src="img/musiu.jpg";width=15 &amp;height=150" width="150" class="img"></a>
+							Musiu garden is the perfect place for dinner especialy on a summer night. Come have some pasta and wine, while watching a good
+							movie in good company. We highly recomand this restaurant 
+							because of the food quality (french, italian, greek and others) and the good vibes of the place.
+							
+  						</div><div class="clear"></div><br><br></div>
+  							<div class="spacer_large"></div>
+  							
+  							<div class="eveniment_spacer">
+  							<h1 class="obiective">Clubs and bars</h1><br>
+  					  <div class="cazare spacer">
+  					<h2>Epic Society</h2>
+ 						 <a title="Epic"><img alt="Epic" src="img/epic.jpg";width=150&amp;height=150" width="150" class="img"></a>
+ 							This is the fancy night life of Timisoara where all the "good people" go (meaning people with serious money). An imporant thing to know: 
+ 							if you are a man, load your wallet before coming any closer to this place... and if you are a woman, put on some well done make up,
+ 							dress to impress and you will not only get in for free but you will also get free drinks all nigh long. Caution: if you don't look like a 
+ 							magazine model this place will harm your self-esteem.
+  						<div class="clear"></div></div>
+  						
+  						<div class="eveniment_spacer">
+  					 <h2>Heaven</h2>
+  						<a title="Heaven"><img alt="Heaven" src="img/heaven.png";width=15&amp;height=150" width="150" class="img"></a>
+							Night life is becoming more and more beautiful in Timisoara, 
+							and nights in the club quickly turn into mornings and sunrises. 
+							Here, the music does not stop...nor the dance, nor the smiles of people eager for another night of fun.
+							The beats sends us to heaven and the strong bass gets us down on the ground. 
+							Hours are turning into days, days in weeks, and every weekend we just want to experience the infinite Heaven sensation. 
+							When was the last time you danced?  We lift our hands in the air and shout in the chorus:
+							 "Welcome in Heaven!"
+  						</div><div class="clear"><br><br></div>
+  						
+  						  <div class="cazare spacer">
+  					<h2>Bunker</h2>
+ 						 <a title="Bunker"><img alt="Bunker" src="img/bunker.jpg";width=150&amp;height=150" width="150" class="img"></a>
+ 							Bunker Club is that underground club in Timisoara filled with nice people and good music.It is open from Thursday to
+							Saturday! Bunker is the place to get you out of the daily monotony and to fill the weekends evenings and 
+							nights with quality entertainment and events.
+  						<div class="clear"></div></div>
+  						
+  						<div class="eveniment_spacer">
+  					 <h2>Molly Malone's</h2>
+  						<a title="Molly"><img alt="Molly" src="img/molly.jpg";width=15 &amp;height=150" width="150" class="img"></a>
+							One of the most authentic Irish pubs in Romania, Molly Malone can be found in the historical heart of Timisoara.
+							By setting up and arranging, the pub can accommodate over 400 people, offering full comfort for enjoying a Guinness 
+							or a refined whiskey, as well as having the opportunity to enjoy parties, live concerts and sports events.
+  						</div><div class="clear"><br><br></div>
+   </div>
+ </div>
+ </div> 
+</body>
+</html>

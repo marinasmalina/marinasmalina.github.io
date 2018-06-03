@@ -1,0 +1,327 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<link href="muzeu.css" rel="stylesheet" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>HTML</title>
+		<meta name="author" content="user" />
+		<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	</head>
+	<body>
+	<div id="ant">
+	<a href="home.html"><img class="logo" src="logo.png" /></a>
+	<iframe class="blank" src="https://www.meteoblue.com/en/weather/widget/daily/timi%c8%99oara_romania_665087?geoloc=fixed&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windgust=0&winddirection=0&uv=0&humidity=0&precipitation=0&precipitationprobability=0&spot=0&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 216px;height: 171px">
+	</iframe></div>
+	
+	<header>
+	<nav >
+		<ul>
+			<li>
+				<a href="">
+					<div>
+						Tourist attractions
+					</div>
+					</a><div>
+					<ul>
+						<li><a href="#">Best of Timisoara</a></li>
+						<li><a href="biserici.html">Historical churches</a></li>
+						<li><a href="muzee.html">Museums</a></li>
+						<li><a href="#">Parks and GreenPlaces</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">
+					<div>
+						What can you do?
+					</div>
+				</a><div>
+					<ul>
+						<li><a href="#">Theater and opera</a></li>
+						<li><a href="#">Art and culture</a></li>
+						<li><a href="shopping.html">Shopping</a></li>
+						<li><a href="#">Clubs and Bars</a></li>
+						<li><a href="#">Restaurants and Pubs</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="WhereCanYouStay.html">
+					<div>
+						Where can you stay?
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div>
+						  About Timisoara
+					</div>
+				</a><div>
+					<ul>
+						<li><a href="TownHistory.html">Town's history</a></li>
+						<li><a href="#">Local legents</a></li>
+						<li><a href="#">Timisoara in photos</a></li>
+						<li><a href="#">Presentation video</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		
+	</nav>
+	
+</header>
+<div class="fundal" >
+<div id="container" >
+	<div class="box_cnt">
+
+<div class="box_top">
+  <div class="box_footer">
+		<h1 class="biserici" >Museums</h1><br>
+			<div class="org">
+			<h2>Museum of Art</h2>
+						<a title="art"><img alt="art" src="img/muzeuarta.jpg"; height=290; width="350" class="img"></a>
+						Museum of Art from Timisoara - Baroque Palace is one of the 
+						most valuable historical monuments of Timisoara. With the
+						year 1751, when the separation of the military and the 
+						military administration began in Banat, the military engineers
+						became preoccupied with finding a space inside the fortress
+						for the residence of the governor's house. Moreover, the 
+						appearance of the building is eulogiously mentioned in the 
+						work of Francisc Griselini, which appeared in Bucharest in 
+						1926. The building still preserves this form today. The new 
+						name of the monument is The President's Palace. The 
+						President's Palace appears as one of the most representative 
+						constructions in Timisoara in the 18th century and confirms 
+						the administration's preoccupation weather for the beauty of
+						the city..<br><br>
+					
+							
+								<div class="container">
+								  <div class="mySlides">
+									<div class="numbertext">1 / 4</div>
+									<img src="img/m1.jpg" style="width:100%">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">2 / 4</div>
+									<img src="img/m2.jpg" style="width:100%">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">3 / 4</div>
+									<img src="img/m3.jpg" style="width:100%">
+								  </div>
+									
+								  <div class="mySlides">
+									<div class="numbertext">4 / 4</div>
+									<img src="img/m4.jpg" style="width:100%">
+								  </div>
+
+									
+								  <a class="prev" onclick="plusSlides(-1)">❮</a>
+								  <a class="next" onclick="plusSlides(1)">❯</a>
+
+								  <div class="caption-container">
+									<p id="caption"></p>
+								  </div>
+
+								  <div class="row">
+									<div class="column">
+									  <img class="demo cursor" src="img/m1.jpg" height="100" style="width:100%" onclick="currentSlide(1)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/m2.jpg" height="100" style="width:100%" onclick="currentSlide(2)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/m3.jpg" height="100" style="width:100%" onclick="currentSlide(3)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/m4.jpg" height="100" style="width:100%" onclick="currentSlide(4)">
+									</div>
+
+								  </div>
+								</div>
+								<br>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.68710321701!2d21.227104115404764!3d45.75741847910551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47456781d3a39237%3A0x432c134e9f86fc19!2sMuzeul+de+Art%C4%83!5e0!3m2!1sro!2sro!4v1526227619663" width="800" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<br><br>
+			
+			<div class="clear"></div>
+			</div>
+			<div class="org">
+			<h2>The Museum of the Metropolitan Cathedral</h2>
+			
+						<a title="cat"><img alt="cat" src="img/muzcat.jpg";width=150&amp height=250&amp;height="210"; width="300" class="img"></a>
+ 							The Old Church Art Collection of the Timisoara Archdiocese 
+							located in the basement of the Metropolitan Cathedral in 
+							Timisoara. The heritage of church art now houses nearly 
+							1,000 pieces, including a significant number of wood icons,
+							glass and cloth, embroidered, carved or metalwork, and an
+							important religious book fund. They all come from the
+							Banat churches and date back to the 14th, 16th, 17th and
+							19th centuries. Documents of undeniable historical 
+							significance, they express the cultural level in Banat,
+							while emphasizing the sensitivity for the beauty of the
+							faithful..<br><br>
+							<div class="container">
+								  <div class="mySlides">
+									<div class="numbertext">1 / 5</div>
+									<img src="img/ct1.jpg" style="width:100%">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">2 / 5</div>
+									<img src="img/ct2.jpg" style="width:100%">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">3 / 5</div>
+									<img src="img/ct3.jpg" style="width:100%">
+								  </div>
+									
+								  <div class="mySlides">
+									<div class="numbertext">4 / 5</div>
+									<img src="img/ct4.jpg" style="width:100%">
+								  </div>
+								  
+								  <div class="mySlides">
+									<div class="numbertext">5 / 5</div>
+									<img src="img/ct5.jpg" style="width:100%">
+								  </div>
+
+									
+								  <a class="prev" onclick="plusSlides(-1)">❮</a>
+								  <a class="next" onclick="plusSlides(1)">❯</a>
+
+								  <div class="caption-container">
+									<p id="caption"></p>
+								  </div>
+
+								  <div class="row">
+									<div class="column">
+									  <img class="demo cursor" src="img/ct1.jpg" height="100" style="width:100%" onclick="currentSlide(1)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/ct2.jpg" height="100" style="width:100%" onclick="currentSlide(2)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/ct3.jpg" height="100" style="width:100%" onclick="currentSlide(3)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/ct4.jpg" height="100" style="width:100%" onclick="currentSlide(4)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/ct5.jpg" height="100" style="width:100%" onclick="currentSlide(4)">
+									</div>
+
+								  </div>
+								</div>
+								<br>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11134.748483748166!2d21.22053803711399!3d45.75741812389721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455d78ad1df08b%3A0xa6d770774ae8d8f0!2sCatedrala+Mitropolitan%C4%83+Ortodox%C4%83!5e0!3m2!1sro!2sro!4v1526228113043" width="800" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<br>
+						<div class="clear"></div> <br>	</div>
+			<div class="org">		
+			<h2>Communist Consumer Museum</h2>
+				<a title="comunist"><img alt="comunist" src="img/comunist.jpg"width=230&amp height=270&amp;height="210"; width="300" class="img"></a>
+					Arranged in the form of a "regular" dwelling in the Golden Age, 
+					with living room, children's room, kitchen, closet, bathroom, etc. 
+					The Communist Consumer Museum includes "everything Romanians have 
+					at home": domestic and decorative items of Romanian production,
+					furniture, smuggled goods, handmade objects of the time,
+					clothing and clothing accessories, footwear, household articles,
+					home appliances, games, toys, audio tapes, vinyl records,
+					cosmetics, stationery. It is intended for tourists, children, 
+					grandparents. "Before 1989, we were surprised at what they had,
+					now wondering why we were," says the initiator of the Communist
+					Consumer Museum, Ovidiu Mihăiţă, the artist who founded the first
+					independent theater 10 years ago in Timisoara, Aualeu Theater.
+					<br><br>
+					<div class="container">
+								  <div class="mySlides">
+									<div class="numbertext">1 / 5</div>
+									<img src="img/mc1.jpg" style="width:100%">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">2 / 5</div>
+									<img src="img/mc2.jpg" style="width:100%">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">3 / 5</div>
+									<img src="img/mc3.jpg" style="width:100%">
+								  </div>
+									
+								  <div class="mySlides">
+									<div class="numbertext">4 / 5</div>
+									<img src="img/mc4.jpg" style="width:100%">
+								  </div>
+								  
+								  <div class="mySlides">
+									<div class="numbertext">5 / 5</div>
+									<img src="img/mc5.jpg" style="width:100%">
+								  </div>
+
+									
+								  <a class="prev" onclick="plusSlides(-1)">❮</a>
+								  <a class="next" onclick="plusSlides(1)">❯</a>
+
+								  <div class="caption-container">
+									<p id="caption"></p>
+								  </div>
+
+								  <div class="row">
+									<div class="column">
+									  <img class="demo cursor" src="img/mc1.jpg" height="100" style="width:100%" onclick="currentSlide(1)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/mc2.jpg" height="100" style="width:100%" onclick="currentSlide(2)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/mc3.jpg" height="100" style="width:100%" onclick="currentSlide(3)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/mc4.jpg" height="100" style="width:100%" onclick="currentSlide(4)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/mc5.jpg" height="100" style="width:100%" onclick="currentSlide(4)">
+									</div>
+
+								  </div>
+								</div><br>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.3943260473434!2d21.222066815404254!3d45.74324007910525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455d9c5f1b781d%3A0xba308f6dbaa29460!2sMuzeul+Consumatorului+Comunist!5e0!3m2!1sro!2sro!4v1526230023504" width="800" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<br>
+				<div class="clear"></div> <br> </div>
+				</div><p>&nbsp;</p>
+
+</body>
+</html>

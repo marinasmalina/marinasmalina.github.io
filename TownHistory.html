@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		
+		<link href="tmcss.css" rel="stylesheet" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Town's History</title>
+		<meta name="author" content="user" />
+		
+		
+		
+		<script type="text/javascript">
+
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+		
+		
+</script>
+		
+		
+		
+		
+		
+	</head>
+	<body>
+	<div id="ant">
+	<a href="home.html"><img class="logo" src="logo.png" /></a>
+	<iframe class="blank" src="https://www.meteoblue.com/en/weather/widget/daily/timi%c8%99oara_romania_665087?geoloc=fixed&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windgust=0&winddirection=0&uv=0&humidity=0&precipitation=0&precipitationprobability=0&spot=0&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 216px;height: 171px"></iframe></div>
+	</div>
+	<header>
+	<nav >
+		<ul>
+			<li>
+				<a href="">
+					<div>
+						Tourist attractions
+					</div>
+					</a><div>
+					<ul>
+						<li><a href="#">Best of Timisoara</a></li>
+						<li><a href="biserici.html">Historical churches</a></li>
+						<li><a href="muzee.html">Museums</a></li>
+						<li><a href="#">Parks and GreenPlaces</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">
+					<div>
+						What can you do?
+					</div>
+				</a><div>
+					<ul>
+						<li><a href="#">Theater and opera</a></li>
+						<li><a href="#">Art and culture</a></li>
+						<li><a href="shopping.html">Shopping</a></li>
+						<li><a href="#">Clubs and Bars</a></li>
+						<li><a href="#">Restaurants and Pubs</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="WhereCanYouStay.html">
+					<div>
+						Where can you stay?
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div>
+						  About Timisoara
+					</div>
+				</a><div>
+					<ul>
+						<li><a href="TownHistory.html">Town's history</a></li>
+						<li><a href="#">Local legents</a></li>
+						<li><a href="#">Timisoara in photos</a></li>
+						<li><a href="#">Presentation video</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		
+	</nav>
+	
+</header>
+<div id="container">
+<div class="box_cnt">
+<div class="box_top">
+<div class="box_footer">
+<div class="left"> <h1 class="">History of Timisoara</h1><br>
+
+
+
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="img/Tm4.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="img/Tm5.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="img/Tm6.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="img/Tm7.png" style="width:100%">
+	  
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="img/Tm8.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="img/Tm9.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/Tm4.png" height="70" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column"> 
+      <img class="demo cursor" src="img/Tm5.png" height="70" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/Tm6.png" height="70" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/Tm7.png" height="70" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/Tm8.png" height="70" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="img/Tm9.png" height="70" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<h2><b>Wolf statues</b></h2>
+          <p>
+		  
+		  <img alt="" src="img/Tm0.png" width="250" class="img" />
+  
+  
+The statue of "Lupoaicei din Timisoara" is a statue depicting the
+ legendary prisoners of Rome, the Romulus and Remus brothers, 
+breast-fed by a she-wolf. The statue renders a legend of Rome,
+ according to which the two brothers who founded the city were
+ cared for by a she-wolf. 
+ <br><br>
+ Location: The monument, located in Victoriei Square,
+ is a gift made to Timisoara by the municipality of Rome,
+ as a symbol of latinity that unites the Romanian and 
+ Italian peoples. It is located in the city center, 
+ in the market between the Opera and the Metropolitan Cathedral.
+ <br><br>
+ History: The inauguration of the monument took place on 23 April 1926 
+ in the presence of 10,000 people. The event was attended by Dr. 
+ Samuil Şagovici, the Mayor of Timişoara Vasile Goldiş, Minister 
+ of Religious Affairs Grigore Trancu-Iaşi, Minister of Labor and 
+ Delegates of Mussolini, the head of the Italian state at that time.
+ The solemnity came with total exclusion from any role of former Mayor
+ of Timisoara, Dr. Lucian Georgevici, forced to resign on April 17, in a tense climate.
+
+Following the Vienna dictate by which Hungary received Northern Transylvania,
+ the center of Timisoara was the site of a protest demonstration. Italy 
+ supported the claims of Hungary, being under the leadership of Benito Mussolini,
+ the statue drawing the dissatisfaction of protesters who protested against it,
+ being quickly removed from the center of Timisoara.
+ 
+ 
+  </p>
+  
+  
+  
+          <br><br>
+          <hr><br><br>
+
+
+<h2><b>Middle Ages</b></h2>
+          <p>
+  
+  Timișoara was first mentioned as a place in either 1212 or 1266 as Castrum Temesiense. The territory later to be known
+  as Banat was conquered and annexed by the Kingdom of Hungary in 1030. Timișoara grew considerably during the reign of 
+  Charles I, who, upon his visit here in 1307, ordered the construction of a royal palace. Timișoara's importance also
+  grew due to its strategic location, which facilitated control over the Banat plain. By the middle of the 14th century, 
+  Timișoara was at the forefront of Western Christendom's battle against the Muslim Ottoman Turks. French and Hungarian 
+  crusaders met at the city before engaging in the Battle of Nicopolis in 1396. Beginning in 1443, John Hunyadi used 
+  Timișoara as a military stronghold against the Turks, having built a powerful fortress. The city was repeatedly besieged
+  by the Ottomans in 1462, 1476, 1491, and 1522. 
+  </p>
+  
+  
+  
+          <br><br>
+          <hr><br><br>
+		  
+		  
+          <h2><b>16th–19th centuries</b></h2>
+          <p>
+  <img alt="" src="img/Tm1.png" width="350" class="img" />
+   
+   In 1552, a 16,000-strong Ottoman army led by Kara Ahmed Pasha conquered the city and transformed 
+   it into a capital city in the region (Temeşvar Eyalet). The local military 
+   commander, István Losonczy, and other Christians were massacred on 27 July 1552 while 
+   escaping the city through the Azapilor Gate.Timișoara remained under Ottoman rule for nearly 
+   160 years, controlled directly by the Sultan and enjoying a special status, similar to other
+   cities in the region such as Budapest and Belgrade. During this period, Timișoara was home
+   to a large Islamic community and produced famous historical figures such as Osman Aga of 
+   Temesvar, until Prince Eugene of Savoy conquered it in 1716. Subsequently, the city came 
+   under Habsburg rule, and it remained so until the early 20th century, except for the Ottoman 
+   occupation between 1788–1789 during the Ottoman-Habsburg war. The city was defortified 
+   starting in 1892 up until 1910, and several major road arteries were built to connect 
+   the suburbs with the city centre, paving the way for further expansion of the city.[citation needed]
+
+It was the first mainland European city and second in the world after New York to be lit by
+ electric street lamps in 1884. It was also the second European and the first city 
+ in what is now Romania with horse-drawn trams in 1869. It is said that Gustave Eiffel, 
+ the creator of the Eiffel Tower in Paris, drew the projects of one of Timișoara's footbridges
+ over the Bega, the "Metal Bridge", however, it was actually planned by Róbert Tóth, the head 
+ of the Bridge Department, at the Reșița rail factory.
+   
+  </p>
+		  <br><br><br>
+          <hr><br><br>
+		 
+		  <h2><b>20th century</b></h2>
+          <p>
+  <img alt="" src="img/Tm2.png" width="350" class="img" /></a>
+
+  
+  On 31 October 1918, local military and political elites establish the "Banat National Council",
+  together with representatives of the region's main ethnic groups: Romanians, Germans, Serbs and
+  Hungarians. On 1 November they proclaimed in Timișoara the short-lived Banat Republic. In the 
+  aftermath of World War I, the Banat region was divided between the Kingdom of Romania and the
+  Kingdom of Serbs, Croats and Slovenes, and Timișoara came under Romanian administration after
+  Serbian occupation between 1918–1919. The city was ceded from Hungary to Romania by the Treaty 
+  of Trianon on 4 June 1920. In 1920, King Ferdinand I awarded Timișoara the status of a
+  University Centre, and the interwar years saw continuous economic and cultural development.
+  A number of anti-fascist and anti-revisionist demonstrations also took place during this time.
+
+  
+During World War II, Timișoara suffered damage from both Allied and Axis bombing raids,
+ especially during the second half of 1944. On 23 August 1944, Romania, which until then 
+ was a member of the Axis, declared war on Nazi Germany and joined the Allies. Surprised, 
+ the local Wehrmacht garrison surrendered without a fight,[citation needed] and German 
+ and Hungarian troops attempted to take the city by force throughout September, without success.
+
+After the war, the People's Republic of Romania was proclaimed, and Timișoara underwent
+ Sovietization and later, systematisation. The city's population tripled between 1948 
+ and 1992. In December 1989, Timișoara witnessed a series of mass street protests in
+ what was to become the Romanian Revolution.[citation needed] On 20 December, three 
+ days after bloodshed began there, Timișoara was declared the first city free of Communism in Romania.
+  
+  <br><br><br>
+          <hr><br>
+  <h2><b>The Street Light</b></h2>
+  
+  <img alt="" src="img/Tm3.png" width="350" class="img" /></a>
+  
+  In front of the Banat Museum (on the side facing Lucian Blaga St.) 
+  there is a street light inscribed in four languages which reminds 
+  that Timişoara was the first city in Europe with streets electrically
+  illuminated – more specifically, we mean that Timişoara was the first
+  city where public street lighting was designed and implemented in a general system for the entire city.
+
+In 1882, the 25 years of contract with the Viennese company that provided 
+gas for lighting the streets of Timişoara ended. The provider however
+ decided to increase gas prices at a level deemed unacceptable by the
+ municipality. The situation was especially complicated since the pipes 
+ through which the gas flowed were all owned by the provider 
+ (under the contract signed 25 years prior), and the Viennese
+ were determined to dismantle them quickly if the contract could 
+ not be extended. Thus, there was the possibility that the city’s streets remain in the dark.
+
+The solution came with the offer made by “Anglo Austrian Brush Electrical 
+Company Limited”, a British-Austrian firm based also in Vienna; the 
+building of a power plant to supply a total of 516 street lights was
+ proposed (soon they would become 730 street lights). The English
+ already had the know-how required for this undertaking. In England 
+ the first use of electricity for street lighting had already been
+ done in 1879. But in all these first cases, they were rather actions 
+ of some futuristic experiments, and not long-term systems. An American 
+ city reported that the main square had become “lighted as the day” ... with four street lights.
+
+Timişoara’s case is thus clear: a revolutionary system seen not 
+as an experiment, but thought that a system with hundreds of
+ street lights that illuminate the city’s entire central area.
+ To this also contributed the opening to the latest technical 
+ novelties, typical in nineteenth century Timişoara (still existing today),
+ but also the good financial situation of those years, generates mainly by 
+ the accumulation of private capital in the city.
+  
+  
+  
+  
+	</body>
+	
+	
